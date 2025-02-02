@@ -7,7 +7,8 @@ body {
     background: linear-gradient(45deg, #000000, #383737, #1a1a1a);
     background-size: 400% 400%;
     animation: bgAnimation 10s ease-in-out infinite;
-    
+    display: flex;
+    flex-direction: column;
   }
 
   @keyframes bgAnimation {
@@ -147,6 +148,7 @@ footer
     background-color: #1a1a1a;
     text-align: center;
     font-style: italic;
+    margin-top: auto;
   }
   footer a
   {
@@ -154,6 +156,109 @@ footer
     color: #ffcc00;
   }
   
+main {
+    flex: 1;
+}
+
+/* projects.html */
+
+#projects
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+#projects h1
+{
+    text-align: center;
+  font-size: 30px;
+}
+
+
+#project-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-box
+{
+  width: 300px;
+    text-align: center;
+  background-color: #1a1a1a;
+    border: 2px solid #ffcc00;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .project-box a
+  {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .project-box:hover
+  {
+    box-shadow:0 0 5px 2px #ffcc00 inset;
+  transform: translate(0, -5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+#btn-1 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #ffcc00;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    transition: background-color 0.3s ease-in-out;
+}
+#btn-1:hover
+{
+    background-color: #ffcc00;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media --------------------- */
+
   @media (min-width: 1025px) 
   {
     #nav-links
@@ -186,4 +291,42 @@ footer
     .btn {
       font-size: x-large;
     }
+
+
+    
+#projects
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+#projects h1
+{
+    text-align: center;
+  font-size: 50px;
+}
+
+#project-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-box
+{
+  width: 300px;
+    text-align: center;
+  background-color: #1a1a1a;
+    border: 2px solid #ffcc00;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+ 
+    transition: transform 0.3s ease-in-out;
+  }
+
+
   }
