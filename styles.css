@@ -261,13 +261,13 @@ main {
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    margin: 10px;
+    margin: 20px;
   }
 
   .service-box:hover
   {
     box-shadow:0 0 5px 2px #ffcc00 inset;
-  transform: translate(0, -10px);
+  transform: translate(0, -5px);
   transition: transform 0.3s ease-in-out;
 }
 .service-box a
@@ -279,7 +279,62 @@ main {
 
 
 
+/* ---------------- CONTACT -------------- */
 
+#contact
+{
+  text-align: center;
+  color: white;
+}
+#contact h1
+{
+  font-size: 40px;
+  color: #ffcc00;
+}
+#contact button
+{
+  margin-top: 20px;
+
+}
+#form
+{
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffcc00;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px #ffcc00 inset;
+}
+
+.input
+{
+  height: 30px;
+  background-color:aliceblue;
+  border:2px solid #ffcc00;
+  border-radius: 10px;
+}
+
+#social
+{
+  margin:4rem;
+}
+
+#contact a
+{
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  transition: transform 0.3s ease-in-out;
+}
+
+#contact a:hover
+{
+  color: #ffcc00;
+  transform: translate(0,-5px);
+  transition: transform 0.3s ease-in-out;
+}
 
 
 
@@ -360,6 +415,26 @@ main {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+}
+
+
+#form
+{
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffcc00;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px #ffcc00 inset;
+}
+
+.input
+{
+  height: 30px;
+  background-color:aliceblue;
+  border:2px solid #ffcc00;
+  border-radius: 10px;
 }
 
 
