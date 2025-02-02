@@ -1,0 +1,189 @@
+body {
+    color:#ffcc00;
+    font-family:Helvetica;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #000000, #383737, #1a1a1a);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s ease-in-out infinite;
+    
+  }
+
+  @keyframes bgAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+header
+{
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 5px 2rem;
+    
+}
+
+#nav-links
+{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 10%;
+    list-style-type: none;
+    padding: 2px;
+}
+
+.nav-item a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-item
+{
+
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-item:hover
+{
+  transform: translate(0, -5px);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.nav-item a:hover
+{
+    color:#ffcc00;
+}
+
+#hero
+{
+    
+    font-size: 30px;
+   text-align: center;
+    color: white;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#hero h1
+{
+    font-size:50px;
+}
+.span-text
+{
+  color: #ffcc00;
+}
+#hero h5
+{
+    color: white;
+}
+#sym
+{
+  font-size: 100px;
+  box-shadow: 4px 2px 5px #ffcc00;
+  padding:10px;
+  border-radius: 20px;
+}
+#sym:hover
+{
+  transform: rotate(360deg);
+  transition: transform 0.7s ease-in-out;
+}
+hr
+{
+    border: 2px solid white;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#typed
+{
+    color: #ffcc00;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.btn
+{
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border:2px solid #ffcc00;
+    background: none;
+    margin-top: 30px;
+    margin-right: 5px;
+    transition: color 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+.btn:hover
+{
+  transition: color 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+    background-color: #ffcc00;
+    color: black;
+
+}
+
+footer
+{
+    height: auto;
+    padding: 2px;
+    background-color: #1a1a1a;
+    text-align: center;
+    font-style: italic;
+  }
+  footer a
+  {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+  @media (min-width: 1025px) 
+  {
+    #nav-links
+    {
+        gap: 10%;
+    }
+    #hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 30px;  
+    }
+.hero-text
+{
+  width: 500px; 
+}
+    #sym
+    {
+      font-size: 150px;
+ 
+    }
+
+    #hero h1 {
+      font-size: 60px;
+    }
+    #typed {
+      font-size: 35px;
+    }
+    .btn {
+      font-size: x-large;
+    }
+  }
